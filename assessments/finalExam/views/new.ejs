@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+<h1>Add New Reading</h1>
+
+<form onsubmit="handleFormSubmit(event)" >
+  <label for="min">Minimum:</label>
+  <input type="number" id="min" name="min" required>
+  <br>
+  <label for="max">Maximum:</label>
+  <input type="number" id="max" name="max" required>
+  <br>
+  <label for="average">Average:</label>
+  <input type="number" id="average" name="average" required>
+  <br>
+  <button type="submit">Add Reading</button>
+</form>
+
+<%- include('partials/footer') %>
+
+<script>
+  async function handleFormSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Retrieve the form values
+    const min = document.getElementById('min').value;
+    const max = document.getElementById('max').value;
+    const average = document.getElementById('average').value;
+
+    // Call the createnew function from readingsoperation
+    try {
+      const response = await fetch('/add', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ min, max, average })
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log(result); // Handle the response as needed
+      } else {
+        console.error('Error:', response.statusText);
+      }
+    } catch (error) {
+      console.error('Error:', error);
+    }
+    
+  }
+</script>
+

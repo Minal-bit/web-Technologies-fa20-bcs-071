@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<h1>Voltage Readings</h1>
+
+<a href="/new">Add New</a>
+
+<ul>
+  <% readings.forEach(function(reading) { %>
+    <li>
+      <p>Minimum: <%= reading.min %></p>
+      <p>Maximum: <%= reading.max %></p>
+      <p>Average: <%= reading.average %></p>
+      <form action="/delete/<%= reading._id %>" method="POST">
+        <input type="hidden" name="_method" value="DELETE"> <!-- Add this line -->
+        <button type="submit">Delete</button>
+      </form>
+    </li>
+  <% }); %>
+</ul>
+<%- include('partials/footer') %>
