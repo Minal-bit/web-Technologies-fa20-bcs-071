@@ -1,0 +1,36 @@
+ nav {
+    background-color: rgb(46, 46, 223);
+}
+.navs {
+  justify-content: space-between;
+  padding: 0 2rem;
+  width: 8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.logo {
+  display: inline;
+  width: 10rem;
+  font: cursive;
+  font-family: "Brush Script MT";
+  font-size: 30px;
+  color: rgb(247, 250, 247);
+  font-weight: 200;
+  letter-spacing: 2px;
+  border-right: 1px white double;
+ 
+}
+.class
+{
+  display: inline;
+  width: 10rem;
+  font: cursive;
+  font-family: "Brush Script MT";
+  font-size: 30px;
+  color: rgb(3, 3, 3);
+  font-weight: 200;
+  letter-spacing: 2px;
+  border-right: 1px white double;
+  margin-left: 10px;
+}

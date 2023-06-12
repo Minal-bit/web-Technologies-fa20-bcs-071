@@ -1,0 +1,14 @@
+{
+  "name": "u_calcu",
+  "version": "1.0.0",
+  "description": "test npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calcu"
+  ],
+  "author": "me",
+  "license": "ISC"
+}

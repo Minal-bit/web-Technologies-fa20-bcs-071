@@ -23,7 +23,7 @@ app.use(express.json());
 app.get("/", async (req, res) =>
 {
     readings = await getAllreadings();
-      res.render("index",);
+      res.render("index",readings);
   
  });
 app.get("/new", (req, res) => {
@@ -40,22 +40,20 @@ app.post("/add", async (req, res) => {
   }
 });
 app.get("/delete/:id", async (req, res) => {
-  const {id} = req.params.id;
+  const {id} = req.params; // Remove .id from req.params.id
 
   try {
-    const deletereadings = await deletereadings(id);
-    res.redirect("/");
+    await deletereadings(id);
+    res.redirect("/"); // Redirect instead of using window.location.href
   } catch (error) {
     res.status(500).json({error: "Failed to delete reading"});
   }
 });
 
+
 app.use(express.json());
 app.listen(port);
-
-
-
-
+console.log("Server listening on port " + port);
 // Other server configurations and routes...
 
 

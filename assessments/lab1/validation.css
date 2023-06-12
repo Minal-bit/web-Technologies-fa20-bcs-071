@@ -1,0 +1,66 @@
+
+body
+{ 
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: rgb(93, 93, 107);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    width: 100%;
+    margin: 50px;
+    padding: 50px;
+    max-width: 200px;
+    min-height: 200px;
+    border-radius: 20%;
+    position: relative;
+    display: inline-block;
+    /* border: 1rem black solid;  */
+    grid-template-columns: 1fr 6fr;
+    background-color: blanchedalmond;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);   
+}
+button
+{  
+   margin-top: 5%;
+   color: aliceblue;
+   background-color: black;
+   text-decoration-color: whitesmoke;
+}
+h3
+{
+  text-align: center;
+}
+span
+{
+  color: red;
+  display: block;
+  margin-bottom: 2%;
+}
+.green
+{
+    border-color: green;
+}
+.red{
+    position: relative;
+    border-color: red;
+    animation-name: moveit;
+    animation-duration: .5s;
+}
+@keyframes moveit {
+    0%{
+        right:0px;
+    }
+    50%{
+        right:5px;
+    }
+    100%{
+        right:-5px;
+    }
+}
+
+

@@ -9,14 +9,17 @@ const createnew = async (max, min, average) => {
   product.average = average;
   await product.save();
   console.log("reading saved");
+    res.redirect("/"); // Redirect instead of using window.location.href
+
 };
 const getAllreadings = async () => {
   let readings = await readingModel.find();
   return readings;
 };
-const deletereadings = async (_id) => {
-  let deletedReading = await readingModel.findByIdAndDelete(_id);
-  return deletedReading;
+const deletereadings = async (id) => {
+  await readingModel.findByIdAndDelete(id);
+  console.log("deleted");
+
 };
 
 module.exports.createnew = createnew;

@@ -1,0 +1,148 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body
+{
+    background-color: rgb(175, 153, 128);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+.container
+{
+    position: relative;
+    background:white;
+    margin: 50px;
+    border-radius: 30%;
+    display: flex;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+    
+}
+.container >.left_Side
+{
+  position: relative;
+  background-color: rgb(70, 45, 28);
+  padding: 40px;
+}
+.profile
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255 , 0.2);
+}
+.profile .image
+{
+  display: block;
+  position: relative;
+  border-radius: 20%;
+  overflow: hidden;
+}
+.profile h2
+{
+  color: white;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profile h2 span 
+{
+  font-size: 0.8em;
+  font-weight: 300;
+  color: wheat;
+}
+h6{
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.contact_Info 
+{
+  padding: 6px;
+  color: white;
+}
+.contact_Info .title , .education h3 , .experience>h3 , .projects>h3
+{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.experience>h3 , .education>h3 , .Skills>.h3  , .projects>h3
+{
+ 
+  border: 2px solid  rgb(70, 45, 28);
+  background-color: rgb(70, 45, 28);
+  color: #f1f1f1;
+}
+a , .Languages {
+  color: aliceblue;
+}
+
+li
+{
+  list-style-type: none;
+
+}
+.education h4 , .experience li , .projects li
+{
+  text-indent: 1em;
+}
+
+.education li  , .projects li
+{
+  border-left: rgb(70, 45, 28)  solid 2px;
+  padding: 5px;
+
+}
+
+.container >.right_Side
+{
+  position: relative;
+  color: rgb(70, 45, 28);
+  background-color: rgb(255, 255, 255);
+  padding: 60px;
+}
+.skill h3{
+  color: #000;
+}
+.skill {
+  display: inline-block;
+  padding: 5px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.contact_Info >h3 , .Languages >h3
+{
+  color: blanchedalmond;
+}
+.Languages li
+{
+  text-indent: 1rem;
+}
+.Languages , .Languages>li
+{
+  margin-top: 1rem;
+}
+.experience > li
+{
+  margin: 2rem;
+  padding: 5%;
+}
+@media screen and (max-width:500px) {
+  .container{
+      display: block;
+      background-color: burlywood;
+  }

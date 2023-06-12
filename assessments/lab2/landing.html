@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe 101</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./landing.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="./landing.html" style="text-decoration: none"
+          ><p class="logo">Recipes 101</p></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item navs">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./landing.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item navs">
+              <a class="nav-link" href="./landing.html">Recpies</a>
+            </li>
+            <li class="nav-item navs">
+              <a class="nav-link" href="./landing.html">about</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+          <ul class="navbar-nav me-auto ">
+            <li class="nav-item ">
+              <a class="nav-link" href="./landing.html">Login</a>
+            </li>
+             <li class="nav-item ">
+              <a class="nav-link" href="./landing.html" >register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="first" data-interval="800">
+          <img
+            src="https://expertphotography.b-cdn.net/wp-content/uploads/2019/01/food-photography-blogs-dark.jpg"
+            class="d-block w-100"
+            alt="food"
+          />
+        </div>
+        <div class="carousel-item" id="second" data-interval="800">
+          <img
+            src="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F3070%2Ftrend20210218124824.jpg"
+            class="d-block w-100"
+            alt="food"
+          />
+        </div>
+        <div class="carousel-item" id="third" data-interval="800">
+          <img
+            src="https://hips.hearstapps.com/netdoctor.cdnds.net/15/44/4000x2000/landscape-1445904085-g-spices-531641121.jpg?resize=1200:*"
+            class="d-block w-100"
+            alt="spices"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="info">
+      <p>We are coming soon !</p>
+      <p>
+        We will provide you with easy and fast Pakistani and Continental
+        cuisines
+      </p>
+    </div>
+
+    <div class="card" style="width: 18rem">
+      <img
+        src="https://recipe52.com/wp-content/uploads/2018/04/White-Chicken-Karahi-Recipe-with-Cream.jpg"
+        class="card-img-top"
+        alt="white-karahi-img"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Checkout our latest recpie</h5>
+        <p class="card-text">Chicken White Karahi</p>
+        <a href="./landing.html" class="btn btn-primary">READ ></a>
+      </div>
+    </div>
+
+    <footer class="container" id="about">
+      <center><p class="logo" style="display: block">RECIPE 101</p></center>
+      <p>
+        Use of this site constitutes acceptance of its
+        <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a> .
+      </p>
+      <span>
+        RECIPE 101 is a participant in the Amazon Services LLC Associates
+        Program, an affiliate advertising program designed to provide a means
+        for sites to earn advertising fees by advertising and linking to
+        amazon.com. Any clickable link to amazon.com on the site is an affiliate
+        link.
+      </span>
+    </footer>
+  </body>
+</html>

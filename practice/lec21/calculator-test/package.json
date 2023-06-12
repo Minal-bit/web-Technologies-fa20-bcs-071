@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bash": "^0.0.1",
+    "u_calcu": "^1.0.0"
+  }
+}

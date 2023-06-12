@@ -1,0 +1,61 @@
+
+.card
+{
+    margin: 5rem;
+}
+.info
+{
+    margin: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+.carouselExampleControls
+{
+    max-width: 50%;
+    max-height: 50%; ;
+}
+.logo
+{   
+    display: inline;
+}
+
+footer
+{   
+    padding-top: 10%;
+    border-top: solid 1rem green;
+    background-color: white;
+
+}
+footer > p
+{
+    text-align: center;
+    justify-content: center;
+}
+ .label
+{
+    color: green;
+    font-family: 'Brush Script MT';
+    font:  cursive;
+    font-size: 30px;
+}
+
+.plan 
+{
+    padding: 5%;
+
+}
+.plan > h3{
+    margin: 5%;
+}
+li{
+    list-style-type: none;
+}
+.op
+{   
+    margin: 5%;
+    padding: 5%;
+    background-color: antiquewhite;
+    border: 0.2rem solid;
+}
+
+ 

@@ -9,9 +9,9 @@
       <p>Minimum: <%= reading.min %></p>
       <p>Maximum: <%= reading.max %></p>
       <p>Average: <%= reading.average %></p>
-      <form action="/delete/<%= reading._id %>" method="POST">
-        <input type="hidden" name="_method" value="DELETE"> <!-- Add this line -->
-        <button type="submit">Delete</button>
+      <form action="/delete/<%= reading._id %>" method="GET">
+
+        <button  type="submit">Delete</button>
       </form>
     </li>
   <% }); %>

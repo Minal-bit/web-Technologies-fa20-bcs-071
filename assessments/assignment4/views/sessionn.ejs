@@ -1,0 +1,29 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>instructor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for( let index = 0; index < Courses.length; index++ ) { %>
+    <tr>
+      <td><%= Courses[index].title %></td>
+      <td><%= Courses[index].instructor %></td>
+      <td>
+        <a
+          href="/Courses/sessionn/remove/<%= Courses[index]._id %>"
+          class="btn btn-danger"
+          >Clear</a
+        >
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total Courses</th>
+      <th><%= total %></th>
+    </tr>
+  </tfoot>
+</table>
